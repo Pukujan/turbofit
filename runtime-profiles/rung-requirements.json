@@ -5,10 +5,10 @@
         "rung_id": "local-gsq-rco-iq3s-1m",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          34200,
-          34200,
-          34200,
-          34200
+          27340,
+          27340,
+          27340,
+          27340
         ]
       },
       {
@@ -25,10 +25,10 @@
         "rung_id": "local-gsq-rco-iq3s-128k",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800,
-          13800,
-          13800
+          13000,
+          13000,
+          13000,
+          13000
         ]
       }
     ],
@@ -37,21 +37,21 @@
         "rung_id": "local-underdog-pq2-131072",
         "evidence": "sha256:0323602de8a7f7aaca8e89535cd94fd82d1dfef2ca64656aae8c61762f947c74",
         "required_mb_per_card": [
-          9200
+          8400
         ]
       },
       {
         "rung_id": "local-underdog-pq2-65536",
         "evidence": "sha256:0323602de8a7f7aaca8e89535cd94fd82d1dfef2ca64656aae8c61762f947c74",
         "required_mb_per_card": [
-          7700
+          7600
         ]
       },
       {
         "rung_id": "local-underdog-pq2-32768",
         "evidence": "sha256:0323602de8a7f7aaca8e89535cd94fd82d1dfef2ca64656aae8c61762f947c74",
         "required_mb_per_card": [
-          7450
+          7400
         ]
       }
     ],
@@ -60,21 +60,21 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300
+          12200
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-32768",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12050
+          12000
         ]
       }
     ],
@@ -93,20 +93,20 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800,
-          13800,
-          13800
+          13000,
+          13000,
+          13000,
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300,
-          12300,
-          12300,
-          12300
+          12200,
+          12200,
+          12200,
+          12200
         ]
       }
     ],
@@ -123,16 +123,16 @@
         "rung_id": "local-bonsai-131072",
         "evidence": "sha256:1920a09b85c2d41617715ecac18cc2b54e13103441474cc58677ed07b7ade1e5",
         "required_mb_per_card": [
-          9000,
-          9000
+          8200,
+          8200
         ]
       },
       {
         "rung_id": "local-bonsai-65536",
         "evidence": "sha256:d91a843d1673b8bfd8ec67f89383c757201bb6990a0ad9dadfdd080ffc8f3591",
         "required_mb_per_card": [
-          7500,
-          7500
+          7400,
+          7400
         ]
       }
     ],
@@ -148,14 +148,14 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300
+          12200
         ]
       }
     ],
@@ -178,28 +178,28 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800,
-          13800,
-          13800,
-          13800,
-          13800,
-          13800,
-          13800
+          13000,
+          13000,
+          13000,
+          13000,
+          13000,
+          13000,
+          13000,
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300,
-          12300,
-          12300,
-          12300,
-          12300,
-          12300,
-          12300,
-          12300
+          12200,
+          12200,
+          12200,
+          12200,
+          12200,
+          12200,
+          12200,
+          12200
         ]
       }
     ],
@@ -217,18 +217,18 @@
         "rung_id": "local-bonsai-131072",
         "evidence": "sha256:1920a09b85c2d41617715ecac18cc2b54e13103441474cc58677ed07b7ade1e5",
         "required_mb_per_card": [
-          9000,
-          9000,
-          9000
+          8200,
+          8200,
+          8200
         ]
       },
       {
         "rung_id": "local-bonsai-65536",
         "evidence": "sha256:d91a843d1673b8bfd8ec67f89383c757201bb6990a0ad9dadfdd080ffc8f3591",
         "required_mb_per_card": [
-          7500,
-          7500,
-          7500
+          7400,
+          7400,
+          7400
         ]
       }
     ],
@@ -244,14 +244,14 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300
+          12200
         ]
       }
     ],
@@ -274,28 +274,28 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800,
-          13800,
-          13800,
-          13800,
-          13800,
-          13800,
-          13800
+          13000,
+          13000,
+          13000,
+          13000,
+          13000,
+          13000,
+          13000,
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300,
-          12300,
-          12300,
-          12300,
-          12300,
-          12300,
-          12300,
-          12300
+          12200,
+          12200,
+          12200,
+          12200,
+          12200,
+          12200,
+          12200,
+          12200
         ]
       }
     ],
@@ -312,16 +312,16 @@
         "rung_id": "local-gsq-rco-iq3s-128k",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800
+          13000,
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65k",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300,
-          12300
+          12200,
+          12200
         ]
       },
       {
@@ -336,16 +336,16 @@
         "rung_id": "local-bonsai-131072",
         "evidence": "sha256:1920a09b85c2d41617715ecac18cc2b54e13103441474cc58677ed07b7ade1e5",
         "required_mb_per_card": [
-          9000,
-          9000
+          8200,
+          8200
         ]
       },
       {
         "rung_id": "local-bonsai-65536",
         "evidence": "sha256:d91a843d1673b8bfd8ec67f89383c757201bb6990a0ad9dadfdd080ffc8f3591",
         "required_mb_per_card": [
-          7500,
-          7500
+          7400,
+          7400
         ]
       }
     ],
@@ -362,16 +362,16 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800
+          13000,
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300,
-          12300
+          12200,
+          12200
         ]
       }
     ],
@@ -380,14 +380,14 @@
         "rung_id": "local-maple-65536",
         "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
-          6300
+          5900
         ]
       },
       {
         "rung_id": "local-maple-131072",
         "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
-          7800
+          6451
         ]
       }
     ],
@@ -406,20 +406,20 @@
         "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
-          13800,
-          13800,
-          13800,
-          13800
+          13000,
+          13000,
+          13000,
+          13000
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
-          12300,
-          12300,
-          12300,
-          12300
+          12200,
+          12200,
+          12200,
+          12200
         ]
       }
     ],
@@ -428,21 +428,21 @@
         "rung_id": "local-ornith-131k",
         "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
         "required_mb_per_card": [
-          13000
+          12200
         ]
       },
       {
         "rung_id": "local-maple-131k",
         "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
-          7800
+          6700
         ]
       },
       {
         "rung_id": "local-maple-65k",
         "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
-          6300
+          5900
         ]
       }
     ],
@@ -458,14 +458,14 @@
         "rung_id": "local-maple-262k",
         "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
-          11400
+          11100
         ]
       },
       {
         "rung_id": "local-maple-131k",
         "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
-          7800
+          6700
         ]
       }
     ]
