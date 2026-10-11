@@ -52,15 +52,15 @@ def _tier(tier_id: str, memory_class: str, min_gb: int, max_gb: int | None, *tok
 # Dedicated VRAM ladder (dense models preferred):
 #   8-11 GB   Bonsai 2 PTQ1_0 / PQ2_0
 #   12-15 GB  Underdog 27B PQ2_0
-#   16-23 GB  GSQ-RCO IQ3_S (131K) — switch off Bonsai here
-#   24-63 GB  Strata Flash Next via expert tiering
-#   64+ GB    Strata Flash Next full residency
+#   16-63 GB  Qwen 3.8 27B GSQ-RCO IQ3_S (llama.cpp)
+#             16-23 GB at 131K, 24-63 GB at 262K (measured: 49.2 tok/s @ 48GB)
+#   64+ GB    Strata Flash Next (125B MoE, needs 64+ GB for expert residency)
 DEDICATED_TIERS: tuple[TierProfile, ...] = (
     _tier("bonsai-2-ptq1-8gb", "dedicated", 8, 11, "bonsai-2", "ptq1"),
     _tier("bonsai-2-pq2-8gb", "dedicated", 8, 11, "bonsai-2", "pq2"),
     _tier("underdog-pq2-12gb", "dedicated", 12, 15, "underdog", "pq2"),
     _tier("gsq-rco-iq3s-16gb", "dedicated", 16, 23, "gsq-rco", "iq3-s"),
-    _tier("strata-flash-next-24gb", "dedicated", 24, 63, "strata", "flash-next"),
+    _tier("gsq-rco-iq3s-24gb", "dedicated", 24, 63, "gsq-rco", "iq3-s"),
     _tier("strata-flash-next-64gb", "dedicated", 64, None, "strata", "flash-next"),
 )
 # Unified / CPU ladder (MoE models preferred — dense 27B crawls on CPU):

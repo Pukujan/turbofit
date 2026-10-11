@@ -37,14 +37,14 @@
           "source": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF"
         },
         "24-63gb": {
-          "model": "Qwen 3.8 Flash Next IQ2_XS (Strata)",
-          "family": "qwen3-8-flash-next-strata",
-          "quant": "IQ2_XS",
-          "size_gb": 36.0,
-          "engine": "strata",
+          "model": "Qwen 3.8 27B GSQ-RCO IQ3_S",
+          "family": "qwen3-8-27b-gsq-rco",
+          "quant": "IQ3_S",
+          "size_gb": 11.8,
+          "engine": "llama.cpp",
           "context": 131072,
-          "note": "125B MoE via expert tiering. 24+ GB VRAM + 64 GB RAM. 60-95 tok/s on consumer GPU.",
-          "source": "Niko1221/Strata"
+          "note": "Task-lossless 3.5 bpw. Measured 49.2 tok/s at 48GB (262K, dual GPU). Replaces Unleashed \u2014 both are Q3 quants of the same 27B.",
+          "source": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF"
         },
         "64gb+": {
           "model": "Qwen 3.8 Flash Next IQ2_XS (Strata)",
@@ -54,16 +54,6 @@
           "engine": "strata",
           "context": 131072,
           "note": "Full residency on 64 GB+ total (VRAM+RAM).",
-          "source": "Niko1221/Strata"
-        },
-        "48gb+": {
-          "model": "Qwen 3.8 Flash Next IQ2_XS (Strata)",
-          "family": "qwen3-8-flash-next-strata",
-          "quant": "IQ2_XS",
-          "size_gb": 36.0,
-          "engine": "strata",
-          "context": 131072,
-          "note": "125B MoE via expert tiering. 48 GB measured winner was Unleashed UD-Q3_K_XL; Strata is the production candidate pending evidence.",
           "source": "Niko1221/Strata"
         }
       }
