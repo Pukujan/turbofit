@@ -677,14 +677,11 @@
     "qwen3-8-flash-next-strata": {
       "family": "Qwen 3.8 Flash Next (Strata)",
       "alias": "qwen3-8-flash-next-strata",
-      "model": "${TURBOFIT_MODEL_ROOT}/flash-next-gsq/Qwen3.8-Flash-Next-IQ2_XS.gguf",
-      "projector": "",
-      "draft": "",
       "methods": {
         "65536": "baseline",
         "131072": "baseline",
-        "1048576": "baseline",
-        "262144": "baseline"
+        "262144": "baseline",
+        "1048576": "baseline"
       }
     },
     "cyber-tiel-coder-35b-a3b-ud-iq3-xxs": {
@@ -1265,17 +1262,26 @@
       }
     },
     "Qwen 3.8 Flash Next (Strata)": {
-      "binary": "strata",
-      "model": "qwen3.8-flash-next-iq2_xs",
+      "alias": "qwen3-8-flash-next-strata",
+      "kind": "process",
+      "binary": "~/.local/share/turbofit/runtimes/strata/.venv/bin/python",
+      "binary_args": [
+        "setup.py",
+        "serve"
+      ],
+      "model_root": "${TURBOFIT_MODEL_ROOT}/flash-next-gsq",
+      "model": "Qwen3.8-Flash-Next-IQ2_XS.gguf",
       "port": 8082,
+      "large": true,
+      "native_context": 131072,
+      "max_context": 131072,
       "methods": {
         "65536": "baseline",
-        "131072": "baseline",
-        "262144": "baseline",
-        "1048576": "baseline"
+        "131072": "baseline"
       },
-      "alias": "qwen3-8-flash-next-strata",
-      "kind": "process"
+      "runtime_flavor": "strata",
+      "working_dir": "~/.local/share/turbofit/runtimes/strata",
+      "data_dir": "~/.local/share/turbofit/strata-data"
     },
     "Ternary Bonsai 2 27B": {
       "alias": "ternary-bonsai-2-27b",

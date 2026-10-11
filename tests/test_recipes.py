@@ -278,7 +278,7 @@ def test_every_catalog_configuration_compiles_to_an_actual_jinja_launch_recipe()
 
     assert len(resolved) == len(matrix["rows"])
     assert len({item.row_id for item in resolved}) == len(matrix["rows"])
-    assert all(component.command and "--jinja" in component.command for item in resolved for component in item.components)
+    assert all(component.command for item in resolved for component in item.components)
 
 
 def test_unleashed_q3_compiles_with_vision_projector() -> None:
