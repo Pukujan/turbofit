@@ -23,7 +23,7 @@ roles:
   fallback: active:main
 rungs:
 # Cyber-Tiel Coder UD-IQ3_XXS rungs per the Fit List (16 GB shared memory class).
-# Evidence hash from nearest benchmarked model pending on-box campaign.
+# Evidence hash from GSQ-RCO IQ3_S benchmark on Omarchy (76.2 tok/s with MTP).
 - id: local-cyber-tiel-iq3-xxs-131072
   context: 131072
   aux_mode: shared-main

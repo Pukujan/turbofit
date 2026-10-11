@@ -59,7 +59,12 @@
       "repository": "https://github.com/stamsam/llama.cpp.git",
       "revision": "9ee03eec62d088a117ab916bbe489e7a3872a21f",
       "purpose": "Maple architecture and TQ2_0 GPU kernels",
-      "cuda_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-cuda/bin/llama-server"
+      "cuda_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-cuda/bin/llama-server",
+      "metal_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-metal/bin/llama-server",
+      "cpu_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-cpu/bin/llama-server",
+      "rocm_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-rocm/bin/llama-server",
+      "vulkan_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-vulkan/bin/llama-server",
+      "windows_binary": "~/.local/share/turbofit/runtimes/maple-llama.cpp-9ee03eec62d088a117ab916bbe489e7a3872a21f/build-cuda/bin/Release/llama-server.exe"
     },
     {
       "id": "strata",

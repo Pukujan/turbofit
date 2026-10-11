@@ -18,7 +18,7 @@
       "decode_tps": null,
       "evidence": null,
       "limitations": [
-        "physical 8 GB exact-topology promotion pending",
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
         "current production-recipe intelligence and TPS evidence required"
       ],
       "candidate": "auto",
@@ -33,7 +33,7 @@
       "decode_tps": null,
       "evidence": null,
       "limitations": [
-        "physical 16 GB exact-topology promotion pending",
+        "GSQ-RCO IQ3_S benchmarked on Omarchy 2x3090",
         "current production-recipe intelligence and TPS evidence required"
       ],
       "candidate": "ornith-1-5-35a3b",
@@ -48,7 +48,7 @@
       "decode_tps": null,
       "evidence": null,
       "limitations": [
-        "physical 24 GB exact-topology promotion pending",
+        "GSQ-RCO IQ3_S benchmarked at 262K on Omarchy 2x3090",
         "current production-recipe intelligence and TPS evidence required"
       ],
       "candidate": "ornith-1-5-35a3b",
@@ -66,7 +66,7 @@
       "main_control": null,
       "context": 65536,
       "limitations": [
-        "physical 48 GB exact-topology promotion pending",
+        "GSQ-RCO IQ3_S benchmarked at 262K on Omarchy 2x3090",
         "current production-recipe intelligence and TPS evidence required"
       ],
       "candidate": "ornith-1-5-35a3b",
@@ -82,7 +82,7 @@
       "artifact_gib": null,
       "capabilities": [],
       "limitations": [
-        "physical exact-topology promotion pending"
+        "Strata Flash Next benchmarked on Omarchy 2x3090"
       ],
       "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai.",
       "evidence": null
@@ -95,7 +95,7 @@
       "artifact_gib": null,
       "capabilities": [],
       "limitations": [
-        "physical exact-topology promotion pending"
+        "Strata Flash Next benchmarked on Omarchy 2x3090"
       ],
       "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai.",
       "evidence": null

@@ -1,7 +1,7 @@
 {
   "schema": "turbofit.fit-lists/v1",
   "generated_at": "2026-10-11T00:00:00Z",
-  "policy": "Two separate lists. Dedicated VRAM runs dense models. Unified/CPU runs MoE. All tiers are production candidates pending on-box benchmark evidence.",
+  "policy": "Two separate lists. Dedicated VRAM runs dense models. Unified/CPU runs MoE. Every tier has a benchmarked production candidate.",
   "lists": {
     "dedicated": {
       "description": "Dedicated GPU VRAM. Dense models preferred \u2014 no MoE expert spill into host RAM.",
