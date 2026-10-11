@@ -1,68 +1,118 @@
 {
   "ranking": [
-    "quality",
-    "context_128k",
-    "server_decode_30_tps",
-    "context_262k",
-    "server_decode_50_tps",
-    "context_1m"
+    "hardware-8gb",
+    "hardware-12gb",
+    "hardware-16gb",
+    "hardware-24gb",
+    "hardware-32gb",
+    "hardware-48gb",
+    "hardware-64gb",
+    "hardware-96gb",
+    "hardware-128gb",
+    "hardware-192gb",
+    "hardware-256gb",
+    "hardware-384gb"
   ],
   "schema": "turbofit.hardware-tier-tournaments/v1",
   "tiers": [
     {
-      "candidates": [
-        "bonsai-27b--auto--64k",
-        "bonsai-27b--ornith-1-5-35a3b--64k",
-        "bonsai-27b--auto--128k"
-      ],
       "id": "hardware-8gb",
-      "physical_evidence_required": true,
       "vram_gb": 8,
+      "physical_evidence_required": true,
+      "candidates": [
+        "ternary-bonsai-2-27b-ptq1--auto--64k",
+        "ternary-bonsai-2-27b-ptq1--carwin-nano--64k",
+        "ternary-bonsai-2-27b-ptq1--ornith-1-5-35a3b--64k",
+        "ternary-bonsai-2-27b-ptq1--auto--128k",
+        "ternary-bonsai-2-27b-ptq1--carwin-nano--128k",
+        "ternary-bonsai-2-27b-ptq1--ornith-1-5-35a3b--128k",
+        "ternary-bonsai-2-27b-ptq1--auto--262k",
+        "ternary-bonsai-2-27b-ptq1--carwin-nano--262k",
+        "ternary-bonsai-2-27b-ptq1--ornith-1-5-35a3b--262k"
+      ],
       "winner": null
     },
     {
+      "id": "hardware-12gb",
+      "vram_gb": 12,
+      "physical_evidence_required": true,
       "candidates": [
-        "qwen3-8-27b-unleashed-ud-iq3-xxs--auto--64k",
-        "qwen3-8-27b-unleashed-ud-iq3-xxs--ornith-1-5-35a3b--64k",
-        "qwen3-8-27b-unleashed-ud-iq3-xxs--auto--128k"
+        "underdog-27b-pq2--auto--64k",
+        "underdog-27b-pq2--carwin-nano--64k",
+        "underdog-27b-pq2--ornith-1-5-35a3b--64k",
+        "underdog-27b-pq2--auto--128k",
+        "underdog-27b-pq2--carwin-nano--128k",
+        "underdog-27b-pq2--ornith-1-5-35a3b--128k",
+        "underdog-27b-pq2--auto--262k",
+        "underdog-27b-pq2--carwin-nano--262k",
+        "underdog-27b-pq2--ornith-1-5-35a3b--262k"
       ],
+      "winner": null
+    },
+    {
       "id": "hardware-16gb",
-      "physical_evidence_required": true,
       "vram_gb": 16,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-27b-gsq-rco-iq3s--auto--64k",
+        "qwen3-8-27b-gsq-rco-iq3s--carwin-nano--64k",
+        "qwen3-8-27b-gsq-rco-iq3s--ornith-1-5-35a3b--64k",
+        "qwen3-8-27b-gsq-rco-iq3s--auto--128k",
+        "qwen3-8-27b-gsq-rco-iq3s--carwin-nano--128k",
+        "qwen3-8-27b-gsq-rco-iq3s--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--64k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--64k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--128k"
-      ],
       "id": "hardware-24gb",
-      "physical_evidence_required": true,
       "vram_gb": 24,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--64k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--64k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--128k"
-      ],
       "id": "hardware-32gb",
-      "physical_evidence_required": true,
       "vram_gb": 32,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-q4-dflash2--auto--64k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--128k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--64k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k"
-      ],
       "id": "hardware-48gb",
-      "physical_evidence_required": true,
       "vram_gb": 48,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k",
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--64k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--carwin-nano--64k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--64k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--128k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--carwin-nano--128k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--128k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--carwin-nano--262k",
+        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--262k",
+        "qwen3-8-27b-q4-dflash2--auto--64k"
+      ],
       "winner": {
         "configuration": "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k",
         "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
@@ -70,69 +120,87 @@
       }
     },
     {
-      "candidates": [
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--262k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k",
-        "qwen3-8-27b-unleashed-ud-iq3-xxs--auto--262k"
-      ],
       "id": "hardware-64gb",
-      "physical_evidence_required": true,
       "vram_gb": 64,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--262k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-bf16--ornith-1-5-35a3b--262k"
-      ],
       "id": "hardware-96gb",
-      "physical_evidence_required": true,
       "vram_gb": 96,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--262k",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-bf16--ornith-1-5-35a3b--262k"
-      ],
       "id": "hardware-128gb",
-      "physical_evidence_required": true,
       "vram_gb": 128,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-bf16--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-bf16--auto--1m"
-      ],
       "id": "hardware-192gb",
-      "physical_evidence_required": true,
       "vram_gb": 192,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-bf16--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-bf16-mtp--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--1m"
-      ],
       "id": "hardware-256gb",
-      "physical_evidence_required": true,
       "vram_gb": 256,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     },
     {
-      "candidates": [
-        "qwen3-8-27b-bf16--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-bf16-mtp--ornith-1-5-35a3b--1m",
-        "qwen3-8-27b-unleashed-ud-q3-k-xl--ornith-1-5-35a3b--1m"
-      ],
       "id": "hardware-384gb",
-      "physical_evidence_required": true,
       "vram_gb": 384,
+      "physical_evidence_required": true,
+      "candidates": [
+        "qwen3-8-flash-next-strata--auto--64k",
+        "qwen3-8-flash-next-strata--carwin-nano--64k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--64k",
+        "qwen3-8-flash-next-strata--auto--128k",
+        "qwen3-8-flash-next-strata--carwin-nano--128k",
+        "qwen3-8-flash-next-strata--ornith-1-5-35a3b--128k"
+      ],
       "winner": null
     }
   ]
