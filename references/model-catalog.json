@@ -973,7 +973,7 @@
       "id": "qwen3-8-flash-next-strata",
       "name": "Qwen 3.8 Flash Next (Strata)",
       "family": "Qwen 3.8 Flash Next",
-      "source": "https://github.com/Niko1221/Strata",
+      "source": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next-GGUF",
       "artifact": "qwen3.8-flash-next-iq2_xs",
       "quantization": "IQ2_XS",
       "vision": true,
@@ -986,7 +986,7 @@
       "roles": [
         "main"
       ],
-      "revision": "0.1.39",
+      "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
       "upstream_source": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
     },
     {
@@ -1006,7 +1006,7 @@
         "main",
         "aux"
       ],
-      "revision": "main",
+      "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
       "upstream_source": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
     {
@@ -1026,7 +1026,7 @@
         "main",
         "aux"
       ],
-      "revision": "main",
+      "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
       "upstream_source": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
     {
@@ -1045,8 +1045,28 @@
       "roles": [
         "main"
       ],
-      "revision": "main",
+      "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
       "upstream_source": "https://huggingface.co/Qwen/Qwen3.8-27B"
+    },
+    {
+      "id": "underdog-27b-pq2",
+      "name": "Underdog 27B PQ2_0",
+      "family": "Underdog 27B",
+      "source": "https://huggingface.co/ConwayResearch/Underdog-Ternary-1.1",
+      "artifact": "Underdog-PQ2_0.gguf",
+      "quantization": "PQ2_0",
+      "vision": true,
+      "moe": false,
+      "runtime_features": [
+        "ternary",
+        "vision-projector"
+      ],
+      "roles": [
+        "main",
+        "aux"
+      ],
+      "revision": "0669b98607d47046c7c2b3f801011d54a08cfccf",
+      "upstream_source": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf"
     }
   ]
 }

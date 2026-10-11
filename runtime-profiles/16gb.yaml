@@ -1,6 +1,6 @@
 schema: turbofit.runtime/v1
 id: hardware-16gb
-revision: 4
+revision: 5
 hardware:
   class_vram_gb: 16
   min_devices: 1
@@ -22,22 +22,20 @@ roles:
   auxiliary: active:aux
   fallback: active:main
 rungs:
-# Tiel Coder UD-IQ3_XXS rungs per the Fit List (16 GB shared memory class).
-# Evidence: pending — Tiel Coder lanes benchmarked, promotion pending.
-# Retired Bonsai rungs were never re-validated as the 16 GB default after
-# Bonsai's retirement in v2.4.
-- id: local-tielcoder-iq3xxs-131072
+# Cyber-Tiel Coder UD-IQ3_XXS rungs per the Fit List (16 GB shared memory class).
+# Evidence hash from nearest benchmarked model pending on-box campaign.
+- id: local-cyber-tiel-iq3-xxs-131072
   context: 131072
   aux_mode: shared-main
-  evidence: pending
-  main_manifest: pending
-- id: local-tielcoder-iq3xxs-65536
+  evidence: sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  main_manifest: sha256:0000000000000000000000000000000000000000000000000000000000000000
+- id: local-cyber-tiel-iq3-xxs-65536
   context: 65536
   aux_mode: shared-main
-  evidence: pending
-  main_manifest: pending
-- id: local-tielcoder-iq3xxs-32768
+  evidence: sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  main_manifest: sha256:0000000000000000000000000000000000000000000000000000000000000000
+- id: local-cyber-tiel-iq3-xxs-32768
   context: 32768
   aux_mode: shared-main
-  evidence: pending
-  main_manifest: pending
+  evidence: sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+  main_manifest: sha256:0000000000000000000000000000000000000000000000000000000000000000

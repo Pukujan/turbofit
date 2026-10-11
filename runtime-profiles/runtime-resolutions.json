@@ -163,7 +163,7 @@
         },
         "aux": {
           "model_tag": "qwen38-27b-unleashed-q3kx-262k-aux",
-          "expected_vram_mb": 0,
+          "expected_vram_mb": 8750,
           "family": "qwen38-27b-unleashed",
           "gpu": "0",
           "port": 8092
@@ -179,7 +179,7 @@
         },
         "aux": {
           "model_tag": "qwen38-27b-unleashed-q3kx-128k-aux",
-          "expected_vram_mb": 0,
+          "expected_vram_mb": 8000,
           "family": "qwen38-27b-unleashed",
           "gpu": "0",
           "port": 8092
@@ -195,7 +195,7 @@
         },
         "aux": {
           "model_tag": "qwen38-27b-unleashed-q3kx-65k-aux",
-          "expected_vram_mb": 0,
+          "expected_vram_mb": 7500,
           "family": "qwen38-27b-unleashed",
           "gpu": "0",
           "port": 8092
