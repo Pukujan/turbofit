@@ -91,3 +91,12 @@ scripts/release-check
 ```
 
 Full architecture, setup, model zoo, evidence policy, and repository map: [`../../README.md`](../../README.md).
+
+## Supported Models
+
+- **Maple Preview 20B-A1B**
+- **Qwen 3.8 27B GSQ-RCO**
+- **Ornith 1.5 35A3B**
+- **MiniMax Music 3**
+- **NVIDIA Parakeet TDT 0.6B v3**
+- **Soprano TTS**

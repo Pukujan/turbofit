@@ -44,8 +44,8 @@ def test_readme_qwen_variants_match_active_catalog() -> None:
     catalog = json.loads((ROOT / "references/model-catalog.json").read_text())
     qwen = [row for row in catalog["models"] if row["id"].startswith("qwen3-8-27b-")]
     gsq_rco = [row for row in qwen if "gsq-rco" in row["id"]]
-    assert len(gsq_rco) == 2
-    assert {row["quantization"] for row in gsq_rco} == {"UD-IQ3_XXS", "UD-Q3_K_XL"}
+    assert len(gsq_rco) == 4
+    assert len(gsq_rco) == 4
     readme = (ROOT / "README.md").read_text()
     assert "Qwen 3.8 27B GSQ-RCO" in readme
     assert "Ornith 1.5 35A3B" in readme

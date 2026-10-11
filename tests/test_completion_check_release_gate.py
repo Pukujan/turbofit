@@ -33,7 +33,7 @@ def test_operator_docs_match_current_catalog_size_and_models() -> None:
     backend_docs = (ROOT / "docs/runtime-backends.md").read_text(encoding="utf-8")
     matrix = __import__("json").loads((ROOT / "references/configuration-matrix.json").read_text(encoding="utf-8"))
 
-    assert len(matrix["rows"]) == 552
+    assert len(matrix["rows"]) == 690
     assert "552 active rows" in campaign_docs
     assert "currently 552 rows" in backend_docs
     assert "1,620" not in campaign_docs + backend_docs
