@@ -1,17 +1,11 @@
 {
   "ranking": [
-    "hardware-8gb",
-    "hardware-12gb",
-    "hardware-16gb",
-    "hardware-24gb",
-    "hardware-32gb",
-    "hardware-48gb",
-    "hardware-64gb",
-    "hardware-96gb",
-    "hardware-128gb",
-    "hardware-192gb",
-    "hardware-256gb",
-    "hardware-384gb"
+    "quality",
+    "context_128k",
+    "server_decode_30_tps",
+    "context_262k",
+    "server_decode_50_tps",
+    "context_1m"
   ],
   "schema": "turbofit.hardware-tier-tournaments/v1",
   "tiers": [

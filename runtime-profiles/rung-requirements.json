@@ -3,47 +3,76 @@
     "hardware-128gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-1m",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
+          34200,
+          34200,
           34200,
           34200
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-262k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
+          17400,
+          17400,
           17400,
           17400
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-128k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
+          13800,
+          13800,
           13800
+        ]
+      }
+    ],
+    "hardware-12gb": [
+      {
+        "rung_id": "local-underdog-pq2-131072",
+        "evidence": "sha256:0323602de8a7f7aaca8e89535cd94fd82d1dfef2ca64656aae8c61762f947c74",
+        "required_mb_per_card": [
+          9200
+        ]
+      },
+      {
+        "rung_id": "local-underdog-pq2-65536",
+        "evidence": "sha256:0323602de8a7f7aaca8e89535cd94fd82d1dfef2ca64656aae8c61762f947c74",
+        "required_mb_per_card": [
+          7700
+        ]
+      },
+      {
+        "rung_id": "local-underdog-pq2-32768",
+        "evidence": "sha256:0323602de8a7f7aaca8e89535cd94fd82d1dfef2ca64656aae8c61762f947c74",
+        "required_mb_per_card": [
+          7450
         ]
       }
     ],
     "hardware-16gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-32768",
-        "evidence": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12050
         ]
@@ -52,7 +81,7 @@
     "hardware-192gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400,
           17400,
@@ -62,7 +91,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
           13800,
@@ -72,7 +101,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300,
           12300,
@@ -110,21 +139,21 @@
     "hardware-24gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300
         ]
@@ -133,7 +162,7 @@
     "hardware-256gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400,
           17400,
@@ -147,7 +176,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
           13800,
@@ -161,7 +190,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300,
           12300,
@@ -206,21 +235,21 @@
     "hardware-32gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800
         ]
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300
         ]
@@ -229,7 +258,7 @@
     "hardware-384gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400,
           17400,
@@ -243,7 +272,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
           13800,
@@ -257,7 +286,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300,
           12300,
@@ -273,7 +302,7 @@
     "hardware-48gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400,
           17400
@@ -281,7 +310,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-128k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
           13800
@@ -289,7 +318,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300,
           12300
@@ -323,7 +352,7 @@
     "hardware-64gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400,
           17400
@@ -331,7 +360,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
           13800
@@ -339,7 +368,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300,
           12300
@@ -349,14 +378,14 @@
     "hardware-8gb": [
       {
         "rung_id": "local-maple-65536",
-        "evidence": "sha256:1c23b7acc299b7693e4e50175b7a3d01252f3cdf3c2cbc25e21f1de09b04116d",
+        "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
           6300
         ]
       },
       {
         "rung_id": "local-maple-131072",
-        "evidence": "sha256:1c23b7acc299b7693e4e50175b7a3d01252f3cdf3c2cbc25e21f1de09b04116d",
+        "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
           7800
         ]
@@ -365,7 +394,7 @@
     "hardware-96gb": [
       {
         "rung_id": "local-gsq-rco-iq3s-262144",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           17400,
           17400,
@@ -375,7 +404,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-131072",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:4237fae3f8855344dbe203a12d97eda11b2a7bbec554b8c53b34c3c3ee9936f7",
         "required_mb_per_card": [
           13800,
           13800,
@@ -385,7 +414,7 @@
       },
       {
         "rung_id": "local-gsq-rco-iq3s-65536",
-        "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
+        "evidence": "sha256:f215afc21c18bbad0ef3f4cb42d727c7f8b2ea28f39df021dc549a792ffe4d22",
         "required_mb_per_card": [
           12300,
           12300,
@@ -404,14 +433,14 @@
       },
       {
         "rung_id": "local-maple-131k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
           7800
         ]
       },
       {
         "rung_id": "local-maple-65k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
           6300
         ]
@@ -427,39 +456,16 @@
       },
       {
         "rung_id": "local-maple-262k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
           11400
         ]
       },
       {
         "rung_id": "local-maple-131k",
-        "evidence": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "evidence": "sha256:ddd40884720a46897608672bcd6735a57fdaf2bd07242924e9d86c07bc5f74f8",
         "required_mb_per_card": [
           7800
-        ]
-      }
-    ],
-    "hardware-12gb": [
-      {
-        "rung_id": "local-underdog-pq2-131072",
-        "evidence": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-        "required_mb_per_card": [
-          9200
-        ]
-      },
-      {
-        "rung_id": "local-underdog-pq2-65536",
-        "evidence": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-        "required_mb_per_card": [
-          7700
-        ]
-      },
-      {
-        "rung_id": "local-underdog-pq2-32768",
-        "evidence": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
-        "required_mb_per_card": [
-          7450
         ]
       }
     ]
