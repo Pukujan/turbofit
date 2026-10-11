@@ -1,0 +1,29 @@
+{
+  "host": "omarchy",
+  "timestamp": "2026-10-11T17:23:26Z",
+  "results": [
+    {
+      "model": "qwen3-8-flash-next-strata",
+      "error": "failed to start"
+    },
+    {
+      "model": "cyber-tiel-coder-35b-a3b-ud-q4-k-xl",
+      "tier": "24gb-unified",
+      "prompts": [
+        {
+          "prompt": "Explain the difference between TCP and UDP in exac",
+          "tokens": 185,
+          "tok_per_sec": 135.88
+        },
+        {
+          "prompt": "Write a Python function that checks if a string is",
+          "tokens": 200,
+          "tok_per_sec": 139.88
+        }
+      ],
+      "avg_tok_per_sec": 137.93,
+      "total_tokens": 385,
+      "evidence": "sha256:88e4f96c4b98a398fb9c8cd361ddc9464d748e909ef636165bda212ea17d7728"
+    }
+  ]
+}
