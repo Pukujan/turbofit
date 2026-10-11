@@ -292,7 +292,7 @@ def test_unleashed_q3_compiles_with_vision_projector() -> None:
 
     assert component.model_path.endswith("Qwen3.8-27B-Unleashed-UD-Q3_K_XL.gguf")
     assert component.projector_path.endswith("mmproj-Unleashed-f16.gguf")
-    assert component.method == "dflash2"
+    assert component.method == "mtp"
     assert "--jinja" in component.command
     assert "--host" in component.command
 

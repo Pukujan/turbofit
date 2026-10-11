@@ -55,6 +55,18 @@
       "gpus": 2,
       "avg_tok_per_sec": 12.5,
       "evidence": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "model": "qwen3-8-27b-gsq-rco-iq3s-mtp",
+      "tier": "16gb",
+      "context": 131072,
+      "gpus": 1,
+      "mtp": true,
+      "avg_tok_per_sec": 76.24,
+      "draft_acceptance": "128/212 (60%)",
+      "baseline_tok_per_sec": 48.07,
+      "speedup": "1.59x",
+      "evidence": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
     }
   ]
 }
