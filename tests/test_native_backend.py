@@ -35,9 +35,9 @@ def test_native_resolution_compiles_loopback_process_with_alias(tmp_path: Path) 
 
     command = list(component.command)
     assert component.kind == "process"
-    assert component.port == 11606
+    assert component.port == 8092
     assert command[command.index("--host") + 1] == "127.0.0.1"
-    assert command[command.index("--alias") + 1] == "qwen3-8-27b-gsq-rco-iq3s"
+    assert command[command.index("--alias") + 1] == "gsq-rco-iq3s-262144-main"
     assert "--jinja" in command
     assert component.gpu == "0"
 
@@ -60,6 +60,6 @@ def test_runtime_resolution_pins_native_family_gpu_and_port(tmp_path: Path) -> N
     runtime = backend(tmp_path)
     item = runtime._roles("local-gsq-rco-iq3s-262144")["main"]
 
-    assert item["family"] == "Qwen 3.8 27B GSQ-RCO"
+    assert item["family"] == "Qwen 3.8 27B GSQ-RCO IQ3_S"
     assert item["gpu"] == "0"
-    assert item["port"] == 11606
+    assert item["port"] == 8092
