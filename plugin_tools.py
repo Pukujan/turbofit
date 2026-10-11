@@ -405,9 +405,9 @@ def recommended_artifact_families(
     if usable_memory_mb < 16 * 1024:
         main = "maple-preview-tq2"
     elif usable_memory_mb < 24 * 1024:
-        main = "qwen3-8-27b-unleashed-ud-iq3-xxs"
+        main = "qwen3-8-27b-gsq-rco-iq3xxs"
     elif usable_memory_mb < 96 * 1024:
-        main = "qwen3-8-27b-unleashed-ud-q3-k-xl"
+        main = "qwen3-8-27b-gsq-rco-iq3s"
     else:
         main = "qwen3-8-27b-bf16"
     return [main, "ornith-1-5-35a3b"]
