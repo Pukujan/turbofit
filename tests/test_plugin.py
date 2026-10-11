@@ -247,7 +247,7 @@ def test_apply_configuration_can_publish_tailnet_and_use_remote_provider_url(mon
     setattr(hermes_config, "save_config", lambda config, merge_existing=False: saved.append(config))
     monkeypatch.setitem(sys.modules, "hermes_cli", hermes_package)
     monkeypatch.setitem(sys.modules, "hermes_cli.config", hermes_config)
-    monkeypatch.setattr(plugin_tools, "publish_tailnet", lambda **_: {
+    monkeypatch.setattr(plugin_tools, "ensure_tailnet", lambda **_: {
         "ok": True,
         "dashboard_url": "https://host.example.ts.net:9444/",
         "provider_base_url": "https://host.example.ts.net:9443/v1",
@@ -848,13 +848,13 @@ def test_slash_turbofit_tiers_returns_all_hardware_levels(monkeypatch) -> None:
     plugin = _load_plugin_module()
     monkeypatch.setattr(plugin, "hardware_tier_snapshot", lambda: {
         "current_hardware": {"native_tier_gb": 48},
-        "tiers": [{"capacity_gb": value} for value in (8, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384)],
+        "tiers": [{"capacity_gb": value} for value in (8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384)],
     })
 
     payload = json.loads(plugin._slash_turbofit("tiers"))
 
     assert payload["current_hardware"]["native_tier_gb"] == 48
-    assert [item["capacity_gb"] for item in payload["tiers"]] == [8, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
+    assert [item["capacity_gb"] for item in payload["tiers"]] == [8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
 
 
 def test_slash_turbofit_setup_launches_the_setup_screen(monkeypatch) -> None:
@@ -909,7 +909,7 @@ def test_dashboard_exposes_physical_hardware_tournaments() -> None:
     payload = module._tournament_rows()
 
     assert payload["ok"] is True
-    assert [item["vram_gb"] for item in payload["tiers"]] == [8, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
+    assert [item["vram_gb"] for item in payload["tiers"]] == [8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
     assert all(item["physical_evidence_required"] is True for item in payload["tiers"])
     assert any("QWEN3-8" in candidate["configuration"].upper() for item in payload["tiers"] for candidate in item["candidates"])
     assert "/api/plugins/turbofit/tournaments" in (ROOT / "dashboard/dist/index.js").read_text()
@@ -923,7 +923,7 @@ def test_dashboard_exposes_speed_and_intelligence_hardware_tiers() -> None:
 
     payload = module.hardware_tier_snapshot()
 
-    assert [item["capacity_gb"] for item in payload["tiers"]] == [8, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
+    assert [item["capacity_gb"] for item in payload["tiers"]] == [8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
     bundle = (ROOT / "dashboard/dist/index.js").read_text()
     assert "/api/plugins/turbofit/hardware-tiers" in bundle
     assert "speed versus intelligence" in bundle
@@ -938,7 +938,7 @@ def test_dashboard_exposes_auxiliary_recommendations_by_tier() -> None:
     payload = module._auxiliary_tiers()
 
     assert payload["ok"] is True
-    assert [item["vram_gb"] for item in payload["tiers"]] == [8, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
+    assert [item["vram_gb"] for item in payload["tiers"]] == [8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
     assert payload["tiers"][3]["status"] == "requires-current-recipe-validation"
     assert payload["tiers"][3]["best_auxiliary"] is None
     bundle = (ROOT / "dashboard/dist/index.js").read_text()

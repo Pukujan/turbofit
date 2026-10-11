@@ -25,6 +25,21 @@
       "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
     },
     {
+      "vram_gb": 12,
+      "best_auxiliary": null,
+      "status": "requires-current-recipe-validation",
+      "context": 65536,
+      "artifact_gib": 7.05,
+      "decode_tps": null,
+      "evidence": null,
+      "limitations": [
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
+        "current production-recipe intelligence and TPS evidence required"
+      ],
+      "candidate": "auto",
+      "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
+    },
+    {
       "vram_gb": 16,
       "best_auxiliary": null,
       "status": "requires-current-recipe-validation",
@@ -52,6 +67,21 @@
         "current production-recipe intelligence and TPS evidence required"
       ],
       "candidate": "ornith-1-5-35a3b",
+      "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
+    },
+    {
+      "vram_gb": 32,
+      "best_auxiliary": null,
+      "status": "requires-current-recipe-validation",
+      "context": 131072,
+      "artifact_gib": 11.53,
+      "decode_tps": null,
+      "evidence": null,
+      "limitations": [
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
+        "current production-recipe intelligence and TPS evidence required"
+      ],
+      "candidate": "auto",
       "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
     },
     {
@@ -101,32 +131,63 @@
       "evidence": null
     },
     {
-      "vram_gb": 200,
+      "vram_gb": 128,
       "best_auxiliary": null,
       "status": "requires-current-recipe-validation",
-      "candidate": "ornith-1-5-35a3b",
-      "capabilities": [
-        "vision",
-        "expert-offload"
-      ],
+      "context": 262144,
+      "artifact_gib": 11.53,
+      "decode_tps": null,
+      "evidence": null,
       "limitations": [
-        "246 GiB artifact requires system-RAM offload",
-        "physical 200GB tournament pending"
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
+        "current production-recipe intelligence and TPS evidence required"
       ],
+      "candidate": "auto",
       "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
     },
     {
-      "vram_gb": 300,
+      "vram_gb": 192,
       "best_auxiliary": null,
       "status": "requires-current-recipe-validation",
-      "candidate": "ornith-1-5-35a3b",
-      "capabilities": [
-        "vision",
-        "expert-offload"
-      ],
+      "context": 262144,
+      "artifact_gib": 11.53,
+      "decode_tps": null,
+      "evidence": null,
       "limitations": [
-        "physical 300GB tournament pending"
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
+        "current production-recipe intelligence and TPS evidence required"
       ],
+      "candidate": "auto",
+      "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
+    },
+    {
+      "vram_gb": 256,
+      "best_auxiliary": null,
+      "status": "requires-current-recipe-validation",
+      "context": 262144,
+      "artifact_gib": 11.53,
+      "decode_tps": null,
+      "evidence": null,
+      "limitations": [
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
+        "current production-recipe intelligence and TPS evidence required"
+      ],
+      "candidate": "auto",
+      "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
+    },
+    {
+      "vram_gb": 384,
+      "best_auxiliary": null,
+      "status": "requires-current-recipe-validation",
+      "context": 262144,
+      "artifact_gib": 11.53,
+      "decode_tps": null,
+      "evidence": null,
+      "limitations": [
+        "GSQ-RCO IQ3_XXS benchmarked on Omarchy 2x3090",
+        "current production-recipe intelligence and TPS evidence required"
+      ],
+      "candidate": "auto",
       "basis": "Auxiliary authority is Ornith 1.5 35A3B (MoE), optional Carwin Nano, or auto. Scale-down: offload experts, then lower context, then auto, then a listed Qwen 3.8 27B GSQ-RCO quant, then Bonsai."
     }
   ]
