@@ -27,10 +27,10 @@ def test_catalog_has_every_requested_main_and_auxiliary_variant() -> None:
     assert maple.quantization == "TQ2_0"
     assert maple.runtime_features == ("maple",)
     assert maple.supported_contexts == (65536, 131072)
-    unleashed = next(item for item in catalog.main_models if item.id == "qwen3-8-27b-unleashed-ud-q3-k-xl")
-    assert unleashed.source == "https://huggingface.co/outsourc-e/Qwen3.8-27B-Unleashed-GGUF"
-    assert unleashed.upstream_source == "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored"
-    assert unleashed.quantization == "UD-Q3_K_XL"
+    gsq_rco = next(item for item in catalog.main_models if item.id == "qwen3-8-27b-gsq-rco-iq3s")
+    assert gsq_rco.source == "https://huggingface.co/outsourc-e/Qwen3.8-27B-GSQ-RCO-GGUF"
+    assert gsq_rco.upstream_source == "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored"
+    assert gsq_rco.quantization == "UD-Q3_K_XL"
     assert catalog.contexts == CONTEXTS
     assert catalog.auxiliary_options == (
         "ornith-1-5-35a3b",

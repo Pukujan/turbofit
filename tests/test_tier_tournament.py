@@ -26,7 +26,7 @@ def test_hardware_tournaments_cover_every_physical_tier_and_valid_configuration(
     assert [item["vram_gb"] for item in tournaments["tiers"]] == [8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384]
     assert len(matrix.rows) == len(selected)
     winners = {item["id"]: item["winner"] for item in tournaments["tiers"]}
-    assert winners["hardware-48gb"]["configuration"] == "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k"
+    assert winners["hardware-48gb"]["configuration"] == "qwen3-8-27b-gsq-rco-iq3s--auto--262k"
     assert all(winner is None for tier, winner in winners.items() if tier != "hardware-48gb")
 
 
@@ -45,7 +45,7 @@ def test_48gb_tier_includes_qwen_38_dflash2_candidate() -> None:
     assert "qwen3-8-27b-q4-dflash2--auto--64k" in candidate_ids_for_tier(tournaments, 48)
 
 
-def test_64_and_96gb_unleashed_candidates_are_active_but_unpromoted() -> None:
+def test_64_and_96gb_gsq_rco_candidates_are_active_but_unpromoted() -> None:
     configurations = json.loads((ROOT / "references/configuration-matrix.json").read_text())
     tournaments = load_tournaments(ROOT / "references/hardware-tier-tournaments.json", configurations)
     policy = json.loads((ROOT / "references/catalog-campaign-policy.json").read_text())

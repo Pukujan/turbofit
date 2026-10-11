@@ -29,7 +29,7 @@ def backend(tmp_path: Path) -> NativeRuntimeBackend:
 
 def test_native_resolution_compiles_loopback_process_with_alias(tmp_path: Path) -> None:
     runtime = backend(tmp_path)
-    item = runtime._roles("local-unleashed-q3kxl-262144")["main"]
+    item = runtime._roles("local-gsq-rco-iq3s-262144")["main"]
 
     component = runtime._component("main", item, 262144)
 
@@ -37,7 +37,7 @@ def test_native_resolution_compiles_loopback_process_with_alias(tmp_path: Path) 
     assert component.kind == "process"
     assert component.port == 11606
     assert command[command.index("--host") + 1] == "127.0.0.1"
-    assert command[command.index("--alias") + 1] == "qwen3-8-27b-unleashed-ud-q3-k-xl"
+    assert command[command.index("--alias") + 1] == "qwen3-8-27b-gsq-rco-iq3s"
     assert "--jinja" in command
     assert component.gpu == "0"
 
@@ -58,8 +58,8 @@ def test_native_backend_refuses_unowned_process_escalation(tmp_path: Path) -> No
 
 def test_runtime_resolution_pins_native_family_gpu_and_port(tmp_path: Path) -> None:
     runtime = backend(tmp_path)
-    item = runtime._roles("local-unleashed-q3kxl-262144")["main"]
+    item = runtime._roles("local-gsq-rco-iq3s-262144")["main"]
 
-    assert item["family"] == "Qwen 3.8 27B Unleashed"
+    assert item["family"] == "Qwen 3.8 27B GSQ-RCO"
     assert item["gpu"] == "0"
     assert item["port"] == 11606

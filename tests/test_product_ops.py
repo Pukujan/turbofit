@@ -60,14 +60,14 @@ def test_shift_model_picks_fitting_combination(monkeypatch) -> None:
         lambda: {
             "combinations": [
                 {"profile": "bonsai-lane", "main": "bonsai-27b", "main_name": "Bonsai 27B", "fit": True},
-                {"profile": "unleashed-lane", "main": "qwen38-unleashed", "main_name": "Qwen 3.8 Unleashed", "fit": True},
+                {"profile": "gsq-rco-lane", "main": "qwen38-gsq-rco", "main_name": "Qwen 3.8 GSQ-RCO", "fit": True},
             ]
         },
     )
     monkeypatch.setattr(
         product_ops.plugin_tools,
         "recommendation_snapshot",
-        lambda preference=None: {"recommendations": {"intelligence": [{"profile": "unleashed-lane"}, {"profile": "bonsai-lane"}]}},
+        lambda preference=None: {"recommendations": {"intelligence": [{"profile": "gsq-rco-lane"}, {"profile": "bonsai-lane"}]}},
     )
     monkeypatch.setattr(
         product_ops.plugin_tools,
@@ -122,8 +122,8 @@ def test_recommended_families_follow_auto_memory_bands() -> None:
     import plugin_tools
 
     assert plugin_tools.recommended_artifact_families(8 * 1024) == ["maple-preview-tq2", "ornith-1-5-35a3b"]
-    assert plugin_tools.recommended_artifact_families(16 * 1024)[0] == "qwen3-8-27b-unleashed-ud-iq3-xxs"
-    assert plugin_tools.recommended_artifact_families(24 * 1024)[0] == "qwen3-8-27b-unleashed-ud-q3-k-xl"
+    assert plugin_tools.recommended_artifact_families(16 * 1024)[0] == "qwen3-8-27b-gsq-rco-iq3xxs"
+    assert plugin_tools.recommended_artifact_families(24 * 1024)[0] == "qwen3-8-27b-gsq-rco-iq3s"
     assert plugin_tools.recommended_artifact_families(96 * 1024)[0] == "qwen3-8-27b-bf16"
 
 

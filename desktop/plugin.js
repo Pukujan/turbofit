@@ -93,7 +93,7 @@ function Gauge({
   const zones = [
     { from: 0, to: 8, token: '--tf-zone-quiet', label: 'Maple' },
     { from: 8, to: 16, token: '--tf-zone-pressure', label: 'Ornith' },
-    { from: 16, to: span, token: '--tf-zone-heavy', label: 'Unleashed' },
+    { from: 16, to: span, token: '--tf-zone-heavy', label: 'GSQ-RCO' },
   ]
 
   const tickValues = [...new Set([0, 8, 16, 24, span].filter((value) => value <= span))]

@@ -331,7 +331,7 @@ def test_contraction_never_selects_banned_rungs() -> None:
     )
     mapping["rungs"] = [
         {
-            "id": "unleashed-ud-q3-k-xl-24gb-262k",
+            "id": "gsq-rco-iq3s-24gb-262k",
             "context": 262144,
             "aux_mode": "shared-main",
             "evidence": "sha256:" + "1" * 64,

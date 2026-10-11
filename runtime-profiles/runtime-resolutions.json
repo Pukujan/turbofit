@@ -95,30 +95,30 @@
       }
     },
     "hardware-24gb": {
-      "local-unleashed-q3kxl-262144": {
+      "local-gsq-rco-iq3s-262144": {
         "main": {
           "expected_vram_mb": 19391,
-          "family": "Qwen 3.8 27B Unleashed",
+          "family": "Qwen 3.8 27B GSQ-RCO",
           "gpu": "0",
-          "model_tag": "qwen3-8-27b-unleashed-ud-q3-k-xl",
+          "model_tag": "qwen3-8-27b-gsq-rco-iq3s",
           "port": 11606
         }
       },
-      "local-unleashed-q3kxl-131072": {
+      "local-gsq-rco-iq3s-131072": {
         "main": {
           "expected_vram_mb": 19391,
-          "family": "Qwen 3.8 27B Unleashed",
+          "family": "Qwen 3.8 27B GSQ-RCO",
           "gpu": "0",
-          "model_tag": "qwen3-8-27b-unleashed-ud-q3-k-xl",
+          "model_tag": "qwen3-8-27b-gsq-rco-iq3s",
           "port": 11606
         }
       },
-      "local-unleashed-q3kxl-65536": {
+      "local-gsq-rco-iq3s-65536": {
         "main": {
           "expected_vram_mb": 19391,
-          "family": "Qwen 3.8 27B Unleashed",
+          "family": "Qwen 3.8 27B GSQ-RCO",
           "gpu": "0",
-          "model_tag": "qwen3-8-27b-unleashed-ud-q3-k-xl",
+          "model_tag": "qwen3-8-27b-gsq-rco-iq3s",
           "port": 11606
         }
       }
@@ -153,50 +153,50 @@
       }
     },
     "hardware-48gb": {
-      "local-unleashed-q3kx-262k": {
+      "local-gsq-rco-iq3s-262k": {
         "main": {
-          "model_tag": "qwen38-27b-unleashed-q3kx-262k-main",
+          "model_tag": "qwen38-27b-gsq-rco-q3kx-262k-main",
           "expected_vram_mb": 17500,
-          "family": "qwen38-27b-unleashed",
+          "family": "qwen38-27b-gsq-rco",
           "gpu": "0",
           "port": 8092
         },
         "aux": {
-          "model_tag": "qwen38-27b-unleashed-q3kx-262k-aux",
+          "model_tag": "qwen38-27b-gsq-rco-q3kx-262k-aux",
           "expected_vram_mb": 8750,
-          "family": "qwen38-27b-unleashed",
+          "family": "qwen38-27b-gsq-rco",
           "gpu": "0",
           "port": 8092
         }
       },
-      "local-unleashed-q3kx-128k": {
+      "local-gsq-rco-iq3s-128k": {
         "main": {
-          "model_tag": "qwen38-27b-unleashed-q3kx-128k-main",
+          "model_tag": "qwen38-27b-gsq-rco-q3kx-128k-main",
           "expected_vram_mb": 16000,
-          "family": "qwen38-27b-unleashed",
+          "family": "qwen38-27b-gsq-rco",
           "gpu": "0",
           "port": 8092
         },
         "aux": {
-          "model_tag": "qwen38-27b-unleashed-q3kx-128k-aux",
+          "model_tag": "qwen38-27b-gsq-rco-q3kx-128k-aux",
           "expected_vram_mb": 8000,
-          "family": "qwen38-27b-unleashed",
+          "family": "qwen38-27b-gsq-rco",
           "gpu": "0",
           "port": 8092
         }
       },
-      "local-unleashed-q3kx-65k": {
+      "local-gsq-rco-iq3s-65k": {
         "main": {
-          "model_tag": "qwen38-27b-unleashed-q3kx-65k-main",
+          "model_tag": "qwen38-27b-gsq-rco-q3kx-65k-main",
           "expected_vram_mb": 15000,
-          "family": "qwen38-27b-unleashed",
+          "family": "qwen38-27b-gsq-rco",
           "gpu": "0",
           "port": 8092
         },
         "aux": {
-          "model_tag": "qwen38-27b-unleashed-q3kx-65k-aux",
+          "model_tag": "qwen38-27b-gsq-rco-q3kx-65k-aux",
           "expected_vram_mb": 7500,
-          "family": "qwen38-27b-unleashed",
+          "family": "qwen38-27b-gsq-rco",
           "gpu": "0",
           "port": 8092
         }

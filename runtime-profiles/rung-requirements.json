@@ -289,21 +289,21 @@
     ],
     "hardware-24gb": [
       {
-        "rung_id": "local-unleashed-q3kxl-262144",
+        "rung_id": "local-gsq-rco-iq3s-262144",
         "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
         "required_mb_per_card": [
           19391
         ]
       },
       {
-        "rung_id": "local-unleashed-q3kxl-131072",
+        "rung_id": "local-gsq-rco-iq3s-131072",
         "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
         "required_mb_per_card": [
           19391
         ]
       },
       {
-        "rung_id": "local-unleashed-q3kxl-65536",
+        "rung_id": "local-gsq-rco-iq3s-65536",
         "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
         "required_mb_per_card": [
           19391

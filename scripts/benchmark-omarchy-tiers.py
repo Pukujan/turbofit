@@ -53,8 +53,8 @@ MODELS = {
         "context": 131072,
         "tier": "24gb+",
     },
-    "qwen3-8-27b-unleashed-ud-q3-k-xl": {
-        "gguf": f"{REMOTE_MODEL_ROOT}/Qwen3.8-27B-Unleashed/Qwen3.8-27B-Unleashed-UD-Q3_K_XL.gguf",
+    "qwen3-8-27b-gsq-rco-iq3s": {
+        "gguf": f"{REMOTE_MODEL_ROOT}/Qwen3.8-27B-GSQ-RCO/Qwen3.8-27B-GSQ-RCO-UD-Q3_K_XL.gguf",
         "engine": "prism",
         "port": 8100,
         "context": 262144,

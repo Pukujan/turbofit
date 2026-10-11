@@ -59,7 +59,7 @@
     "profiles": [
       "hardware-48gb"
     ],
-    "source": "references/results/hardware-tier-winner-48gb-qwen38-unleashed-20260823.json",
+    "source": "references/results/hardware-tier-winner-48gb-qwen38-gsq-rco-20260823.json",
     "status": "validated-native-tournament"
   },
   "sha256:ee78b9da9b3a984c62232ec08a928cd294948f4471e665be9a04d3a1e17e685f": {

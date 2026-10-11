@@ -158,7 +158,7 @@ def test_local_auto_contracts_under_pressure_and_heals_after_stable_headroom(mem
     controller.tick(pressured, now=now)
     result = controller.tick(pressured, now=now + 5)
     if controller.profile.id == "hardware-24gb":
-        # Unleashed UD-Q3_K_XL rungs share one evidence-bound memory
+        # GSQ-RCO IQ3_S rungs share one evidence-bound memory
         # requirement, so the 24GB profile has no smaller memory rung to
         # contract into; the controller holds until live re-fit lands.
         assert result.state.adaptive.current_index == 0
@@ -181,7 +181,7 @@ def test_every_offered_manual_local_combination_uses_the_same_contract_and_heal_
     controller.tick(pressured, now=now)
     result = controller.tick(pressured, now=now + 5)
     if len(item.rungs) == 1 or item.id == "hardware-24gb":
-        # hardware-24gb: Unleashed rungs share one evidence-bound memory
+        # hardware-24gb: GSQ-RCO rungs share one evidence-bound memory
         # requirement, so there is no smaller memory rung to contract into.
         assert result.transitioned is False
         assert result.state.adaptive.current_index == 0

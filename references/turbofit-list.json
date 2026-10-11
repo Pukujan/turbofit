@@ -66,7 +66,7 @@
           "note": "Task-lossless; 3.5 bpw; recommended operating point"
         },
         {
-          "model": "Qwen 3.8 27B Unleashed UD-Q3_K_XL",
+          "model": "Qwen 3.8 27B GSQ-RCO UD-Q3_K_XL",
           "size_gb": 13.0,
           "quant": "UD-Q3_K_XL",
           "note": "Current 24GB profile rung; evidence-backed"
@@ -100,12 +100,12 @@
       "winner": {
         "auxiliary": "Route auxiliary tasks to main",
         "balanced_score": 58.778209660040595,
-        "configuration_id": "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k",
+        "configuration_id": "qwen3-8-27b-gsq-rco-iq3s--auto--262k",
         "context": 262144,
         "evidence": "sha256:b27632086b4389e9b6b539eaf24d35a0d8151b398557ac8e4b23efb72cf9764f",
         "hardware_fingerprint": "sha256:aa8f29e3c3917a04f4301806f0b0f7d33e7267d283e1dfb96264e0ef313d926b",
         "intelligence_score": 46.875,
-        "main": "Qwen 3.8 27B Unleashed UD-Q3_K_XL",
+        "main": "Qwen 3.8 27B GSQ-RCO UD-Q3_K_XL",
         "measured_tps": 39.39215795117914
       }
     },

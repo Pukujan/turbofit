@@ -100,7 +100,7 @@ def test_tier_candidates_publish_current_exact_winner_and_keep_requirements_sepa
     tier48 = next(tier for tier in report["tiers"] if tier["capacity_gb"] == 48)
     candidate = next(
         item for item in tier48["candidates"]
-        if item["configuration_id"] == "qwen3-8-27b-unleashed-ud-q3-k-xl--auto--262k"
+        if item["configuration_id"] == "qwen3-8-27b-gsq-rco-iq3s--auto--262k"
     )
 
     assert tier48["recommendations"]["measured_winner"]["configuration_id"] == candidate["configuration_id"]
