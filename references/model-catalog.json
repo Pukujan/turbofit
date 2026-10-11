@@ -777,46 +777,6 @@
       "upstream_source": "https://huggingface.co/unsloth/Laguna-S-2.1-GGUF"
     },
     {
-      "id": "qwen3-8-27b-unleashed-ud-iq3-xxs",
-      "name": "Qwen 3.8 27B Unleashed UD-IQ3_XXS",
-      "family": "Qwen 3.8 27B Unleashed",
-      "source": "https://huggingface.co/outsourc-e/Qwen3.8-27B-Unleashed-GGUF",
-      "artifact": "Qwen3.8-27B-Unleashed-UD-IQ3_XXS.gguf",
-      "quantization": "UD-IQ3_XXS",
-      "vision": true,
-      "moe": false,
-      "runtime_features": [
-        "vision-projector",
-        "dflash2"
-      ],
-      "roles": [
-        "main"
-      ],
-      "revision": "67a999218fd7002f11bf82bc81d6289beea60841",
-      "upstream_source": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored",
-      "upstream_revision": "5bb7aa90f0efef548e87005b1fb7658e522b6b7f"
-    },
-    {
-      "id": "qwen3-8-27b-unleashed-ud-q3-k-xl",
-      "name": "Qwen 3.8 27B Unleashed UD-Q3_K_XL",
-      "family": "Qwen 3.8 27B Unleashed",
-      "source": "https://huggingface.co/outsourc-e/Qwen3.8-27B-Unleashed-GGUF",
-      "artifact": "Qwen3.8-27B-Unleashed-UD-Q3_K_XL.gguf",
-      "quantization": "UD-Q3_K_XL",
-      "vision": true,
-      "moe": false,
-      "runtime_features": [
-        "vision-projector",
-        "dflash2"
-      ],
-      "roles": [
-        "main"
-      ],
-      "revision": "67a999218fd7002f11bf82bc81d6289beea60841",
-      "upstream_source": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored",
-      "upstream_revision": "5bb7aa90f0efef548e87005b1fb7658e522b6b7f"
-    },
-    {
       "id": "ornith-1-5-35a3b",
       "name": "Ornith 1.5 35B-A3B Q4_K_M",
       "family": "Ornith 1.5 35A3B",
