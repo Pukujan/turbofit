@@ -1,0 +1,24 @@
+{
+  "schema_version": "content-generation.adapter.v1",
+  "helper_repository": "https://github.com/Pukujan/content-generation-modules",
+  "helper_version": "0.5.12",
+  "helper_commit": "62340f3de702f6d2a7d97b9e16465b98360976a3",
+  "modules": [
+    "brand-foundation",
+    "content-context",
+    "writing-direction",
+    "human-sounding-writing",
+    "human-output-naming",
+    "visual-direction",
+    "image-generation",
+    "html-demo"
+  ],
+  "authoritative_project_files": [
+    "README.md",
+    "SKILL.md",
+    "docs/cockpit/README.md",
+    "AGENTS.md",
+    "checkpoints/CURRENT.md"
+  ],
+  "adoption_status": "Adapter pinned for the Turbofit fork. Brand language, the project brief, the visual style, the asset manifest and the review rubric are written here; the cockpit reference images are declared as references, not as generated narrative assets. AGENTS.md and checkpoints/CURRENT.md arrive with the coordination install."
+}

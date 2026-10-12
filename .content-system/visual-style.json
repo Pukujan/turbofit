@@ -1,0 +1,43 @@
+{
+  "schema_version": "content-generation.visual-style.v1",
+  "reference_asset": "docs/cockpit/references/cockpit-target.png",
+  "generation_workflow": "built-in image_gen",
+  "narrative_roles": ["hero"],
+  "palette": {
+    "night_ground": "#05070C",
+    "hud_cyan": "#56FFC4",
+    "hud_amber": "#FFB000",
+    "instrument_glass": "#42D6FF",
+    "day_ground": "#E0E7EB",
+    "day_ink": "#0A7E9E"
+  },
+  "subjects": [
+    "a night road receding to a central vanishing point, seen from the driver's seat",
+    "instrument glass: translucent panels with hairline edges and corner ticks",
+    "a steering wheel in the foreground, its rim crossing the lower centre",
+    "an angled touchscreen console to the driver's right"
+  ],
+  "composition": [
+    "landscape-first, a fixed driving view designed for 1672x941 and 1440x900",
+    "the road narrows to a vanishing point near the centre; the wheel occludes the instrument cluster",
+    "cyan reads on values and headings only; amber is reserved for the dash ambient strip and warnings",
+    "no backdrop blur anywhere: the scene reads correctly without it"
+  ],
+  "text_policy": "Instrument captions are small, uppercase, and spaced. Readouts use fixed-width numerals so digits do not shift. Values are short labels and numbers, never sentences.",
+  "roles": {
+    "hero": {
+      "purpose": "If this project ever ships a narrative image, it is one wide frame of the night driving view with the HUD in the glass. It must not imply the Cockpit is a shipped product or that the reference composition is a real screenshot.",
+      "orientation": "wide",
+      "dimensions": "1672x941",
+      "reader_question": "What does the driver see, and which numbers are actually measured?"
+    }
+  },
+  "reject_when": [
+    "The frame is a generic dark tech scene: purple glow, cyber grid, or stock dashboard of invented charts.",
+    "Any character, mascot, or figure is drawn, generated, or approximated. The copilot slot renders a ring and a COPILOT label only; a real asset is composited later after maintainer approval.",
+    "A metric is shown with a confident number where the runtime reported none; an unmeasured value must read unavailable.",
+    "The image is presented as a real screenshot of live telemetry rather than a target composition.",
+    "Backdrop blur or heavy glassmorphism is used as the primary surface treatment.",
+    "Colors drift off the night ground #05070C, cyan #56FFC4, amber #FFB000, and instrument glass #42D6FF."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "content-generation.project-brief.v2",
+  "project": "turbofit",
+  "audience": [
+    "A person running a Hermes Agent locally who wants one provider that fits the machine they actually own."
+  ],
+  "problem": "Local inference is a hardware-fit problem before it is a model-quality problem. A machine may have dedicated VRAM, unified memory, or RAM only, and the same model that runs well on one does not fit the next. Choosing a model by reputation alone produces a configuration the hardware cannot safely sustain, and the failure is discovered only after the load.",
+  "solution": "Turbofit inventories physical compute and usable memory, recommends an evidence-backed ladder, launches a native backend, and exposes one Hermes-compatible endpoint. It ships as a Hermes Agent provider and a Hermes Dashboard plugin, so the operator reads fit, routing and live usage from the same surface they configure the provider from. The Cockpit is an optional, experimental presentation of that same telemetry as a first-person driving dashboard; it changes no backend behavior.",
+  "evidence": [
+    {
+      "claim": "The Hermes Dashboard integration ships as hand-written, unbundled source rather than a build output.",
+      "source": "dashboard/dist/index.js, the committed Hermes Dashboard entry",
+      "status": "shipped",
+      "supports": "The committed file is an IIFE that reads the host SDK from window.__HERMES_PLUGIN_SDK__ and registers exactly one page, so the distributed artifact is the source of truth and no bundler sits between an edit and the shipped plugin.",
+      "limits": "It does not show that a cockpit view exists, that any gauge is wired to live telemetry, or that the page renders correctly; it shows only how the plugin is packaged and registered.",
+      "recorded_at": "2026-10-11T22:10:00Z",
+      "source_revision": {
+        "kind": "repository_artifact",
+        "reference": "dashboard/dist/index.js, SDK read and Registry.register call",
+        "repository": "SouthpawIN/turbofit",
+        "commit": "43a8c062b232cfa2ae8d568f3dcc33bbbf73cc3e",
+        "path": "dashboard/dist/index.js",
+        "locator": "lines 3 and 498",
+        "uri": "https://github.com/SouthpawIN/turbofit/blob/43a8c062b232cfa2ae8d568f3dcc33bbbf73cc3e/dashboard/dist/index.js"
+      },
+      "cite_in_readme": false
+    },
+    {
+      "claim": "Throughput is reported as nullable, and null means unmeasured rather than zero.",
+      "source": "plugin_tools.py, the status_snapshot and live-usage functions",
+      "status": "shipped",
+      "supports": "status_snapshot returns a usage object whose tps field is None when no throughput was measured, alongside per-GPU entries and host figures; the value is only populated when a source actually reported it.",
+      "limits": "It does not show how a dashboard should render an unmeasured value, and it does not prove the existing dashboard renders throughput at all.",
+      "recorded_at": "2026-10-11T22:10:00Z",
+      "source_revision": {
+        "kind": "repository_artifact",
+        "reference": "plugin_tools.py, status_snapshot and its usage field",
+        "repository": "SouthpawIN/turbofit",
+        "commit": "43a8c062b232cfa2ae8d568f3dcc33bbbf73cc3e",
+        "path": "plugin_tools.py",
+        "locator": "lines 755-760, 822, and 854",
+        "uri": "https://github.com/SouthpawIN/turbofit/blob/43a8c062b232cfa2ae8d568f3dcc33bbbf73cc3e/plugin_tools.py"
+      },
+      "cite_in_readme": false
+    },
+    {
+      "claim": "The Dashboard's HTTP surface for status is a dedicated plugin API, not the plugin bundle.",
+      "source": "dashboard/plugin_api.py, the router that serves the status snapshot",
+      "status": "shipped",
+      "supports": "The plugin API exposes a GET /status route, so a UI reads live state from an HTTP handler and the bundle only renders what that handler returns.",
+      "limits": "It does not show which fields the route returns in practice, whether the route is reachable in a given install, or that the values are fresh at read time.",
+      "recorded_at": "2026-10-11T22:10:00Z",
+      "source_revision": {
+        "kind": "repository_artifact",
+        "reference": "dashboard/plugin_api.py, the GET /status route",
+        "repository": "SouthpawIN/turbofit",
+        "commit": "43a8c062b232cfa2ae8d568f3dcc33bbbf73cc3e",
+        "path": "dashboard/plugin_api.py",
+        "locator": "line 204",
+        "uri": "https://github.com/SouthpawIN/turbofit/blob/43a8c062b232cfa2ae8d568f3dcc33bbbf73cc3e/dashboard/plugin_api.py"
+      },
+      "cite_in_readme": false
+    }
+  ],
+  "boundaries": [
+    "Do not claim the Cockpit is a working product. It is an optional, experimental UI that is design and planning only until it is built and verified in a browser.",
+    "Do not present any reference image as live telemetry. The cockpit composition target is a target composition, not a functioning UI and not a source of real numbers.",
+    "Do not approximate or generate the Nous Girl mascot. The maintainer must approve the mascot and branding before any upstream pull request, and no character is drawn, generated, or substituted in its place.",
+    "Do not report a fabricated number where a metric is missing. An unmeasured value is shown as unavailable, never as a plausible-looking figure.",
+    "Turbofit is a provider and dashboard integration for Hermes Agent. It is not an inference engine of its own."
+  ]
+}

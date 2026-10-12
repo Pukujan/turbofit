@@ -1,0 +1,31 @@
+{
+  "schema_version": "content-generation.review-rubric.v1",
+  "dimensions": [
+    {
+      "id": "telemetry_honesty",
+      "question": "Does every reading shown trace to something the runtime actually reported, with an unmeasured metric shown as unavailable rather than as a plausible number?",
+      "weight": 3
+    },
+    {
+      "id": "cockpit_status_boundary",
+      "question": "Does the copy treat the Cockpit as an optional, experimental UI that is design and planning only, instead of a shipped or production feature?",
+      "weight": 3
+    },
+    {
+      "id": "mascot_boundary",
+      "question": "Does it refuse to draw, generate, or substitute a character in the copilot slot, and hold the mascot for maintainer approval before any upstream pull request?",
+      "weight": 3
+    },
+    {
+      "id": "hardware_specificity",
+      "question": "Does it speak about fit on the actual machine (dedicated VRAM, unified memory, or RAM only) rather than a generic model leaderboard?",
+      "weight": 2
+    },
+    {
+      "id": "human_comprehension",
+      "question": "After twenty seconds, can a first-time reader say what Turbofit does for a machine and which readings are measured?",
+      "weight": 2
+    }
+  ],
+  "decision_rule": "Accept only when telemetry_honesty, cockpit_status_boundary, and mascot_boundary pass and no weighted dimension is below 3/5. Reject any line that presents an invented metric as measured, or that presents the Cockpit as a finished product. A human review can override a model score only with a recorded reason."
+}

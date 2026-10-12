@@ -1,0 +1,33 @@
+{
+  "schema_version": "content-generation.brand-language.v1",
+  "name": "turbofit",
+  "personality": [
+    "hardware-honest",
+    "specific about fit",
+    "quiet about numbers it has not measured",
+    "unwilling to dress a missing value up as a real one"
+  ],
+  "audience_feeling": "I can see what this machine can actually sustain, and I can tell which readings are measured and which are simply not available.",
+  "promise": "One provider for every machine: Turbofit reads the hardware, recommends a ladder it can safely sustain, launches a native backend, and shows the live fit on the dashboard you already configure it from.",
+  "preferred_terms": {
+    "fit": "whether a model plus its KV cache stays inside the tier's usable memory; the rule is model size plus KV cache at or under tier size",
+    "ladder": "the evidence-backed ordering of models a given machine can sustain, not a general leaderboard",
+    "cockpit": "the optional, experimental first-person dashboard presentation of Turbofit telemetry; it changes no backend behavior",
+    "unavailable": "the honest label for a metric that was not measured; never replaced with a plausible-looking number",
+    "provider": "the Hermes Agent provider that Turbofit registers, exposing one endpoint the agent talks to"
+  },
+  "avoid": [
+    "showing a number the runtime did not measure, or implying a missing value is zero",
+    "calling the Cockpit a finished, shipped, or production feature",
+    "presenting the cockpit reference composition as a real screenshot of live telemetry",
+    "naming or approximating the Nous Girl mascot as if it were approved for release",
+    "hype such as seamless, blazing, revolutionary, or best-in-class",
+    "claiming Turbofit is an inference engine rather than a provider and adaptive runtime layer"
+  ],
+  "good_examples": [
+    "Throughput reads unavailable when nothing measured it; the gauge stays blank rather than guessing a number."
+  ],
+  "bad_examples": [
+    "A cockpit that always shows a confident tokens-per-second figure, even when the runtime reported none."
+  ]
+}
